@@ -1,0 +1,176 @@
+/* Contêiner de Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilo dos Cards */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Garante que nada saia da área do card */
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título dos Cards */
+.card h3 {
+    font-size: 1.5rem;
+    color: #2a5934;
+    margin-bottom: 15px;
+}
+
+/* Imagens nos Cards */
+.card .card-image {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+}
+
+.card .card-image:hover {
+    transform: scale(1.1);
+}
+
+/* Formulário no Card */
+.card form {
+    display: flex;
+    flex-direction: column; /* Campos empilhados */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os campos */
+}
+
+.card form label {
+    width: 100%; /* Garante que os labels ocupem toda a largura do card */
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card form input,
+.card form textarea {
+    width: 100%; /* Campos ocupam toda a largura do card */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Inclui padding no cálculo de largura */
+}
+
+.card form textarea {
+    resize: none; /* Remove opção de redimensionar */
+}
+
+.card form button {
+    background-color: #2a5934;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card form button:hover {
+    background-color: #1e4527;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card .card-image {
+        max-width: 120px;
+        height: 120px;
+    }
+
+    .card form input,
+    .card form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .card form button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card .card-image {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .card form input,
+    .card form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .card form button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Responsividade para Telas Muito Pequenas */
+@media (max-width: 360px) {
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card .card-image {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .card form input,
+    .card form textarea {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .card form button {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+}
