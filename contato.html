@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Estilos globais -->
+    <link rel="stylesheet" href="css/contato.css"> <!-- Estilos da página de contato -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/eco-logo.png" alt="Logo Eco Trilhas Chapada">
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="trilhas.html">Trilhas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2 style="text-align: center;">Entre em Contato e Siga-nos em Nossas Redes Sociais</h2>
+        <div class="cards-container">
+            <!-- Card 1: Formulário de Contato -->
+            <div class="card">
+                <h3>Envie-nos um E-mail</h3>
+                <form action="mailto:contato@ecotrilhaschapada.com" method="post" enctype="text/plain">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- Card 2: WhatsApp -->
+            <div class="card">
+                <h3>WhatsApp</h3>
+                <a href="https://api.whatsapp.com/send?phone=5565996506882" target="_blank">
+                    <img src="images/whatsapp-icon2.png" alt="WhatsApp" class="card-image">
+                </a>
+            </div>
+
+            <!-- Card 3: Instagram -->
+            <div class="card">
+                <h3>Instagram</h3>
+                <a href="https://instagram.com/guiafelipemt" target="_blank">
+                    <img src="images/insta-img.png" alt="Instagram" class="card-image">
+                </a>
+            </div>
+
+            <!-- Card 4: TripAdvisor -->
+            <div class="card">
+                <h3>TripAdvisor</h3>
+                <a href="https://www.tripadvisor.com/" target="_blank">
+                    <img src="images/trip.png" alt="TripAdvisor" class="card-image">
+                </a>
+            </div>
+
+            <!-- Card 5: YouTube -->
+            <div class="card">
+                <h3>YouTube</h3>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="images/youtube-icon.png" alt="YouTube" class="card-image">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Eco Trilhas Chapada | Desenvolvido por EAGLEWEB</p>
+    <img src="images/eagleweb.png" alt="">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

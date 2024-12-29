@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Eco Trilhas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galeria.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/eco-logo.png" alt="Logo Eco Trilhas Chapada">
+            </a>
+        </div>
+        <!-- Botão de Menu Hambúrguer -->
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="trilhas.html">Trilhas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Galeria de Fotos -->
+    <section class="gallery-section">
+        <div class="card">
+            <!-- Imagem Superior do Card -->
+            <div class="card-image">
+                <img src="images/galeria-img.jpg" alt="Galeria de Fotos" style="width: 100%; height: auto;">
+            </div>
+            <div class="card-content">
+                <h2>Galeria de Fotos</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/tour/tour1.jpg" alt="Paisagem 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour2.jpg" alt="Paisagem 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour3.jpg" alt="Paisagem 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour4.jpg" alt="Paisagem 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour5.jpg" alt="Paisagem 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour6.jpg" alt="Paisagem 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour7.jpg" alt="Paisagem 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tour/tour8.jpg" alt="Paisagem 8">
+                    </div>
+                </div>
+                <button id="view-more" class="load-more">Ver Mais Fotos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-image" src="" alt="">
+        <button class="prev">&larr;</button>
+        <button class="next">&rarr;</button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Eco Trilhas Chapada | Desenvolvido por EAGLEWEB</p>
+    <img src="images/eagleweb.png" alt="">
+    </footer>
+
+    <!-- Botão do WhatsApp -->
+    <div id="whatsapp-icon">
+        <a href="https://api.whatsapp.com/send?phone=5565996506882" target="_blank">
+            <img src="images/whatsapp-icon.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
